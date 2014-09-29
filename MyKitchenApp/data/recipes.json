@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Bob",
+        "category": "Mandja",
+        "nationality":  "Bulgarian",
+        "image": "data/images/bob.jpg",
+        "description": "Receptata na boba e taina!"
+    },
+    {
+        "id": 2,
+        "name": "Qica",
+        "category": "Qstie",
+        "nationality":  "Bulgarian",
+        "image": "data/images/qica.jpg",
+        "description": "Slagash v tigana i chakash!"
+		},
+    {
+        "id": 3,
+        "name": "Salata",
+        "category": "Salata",
+        "nationality":  "Bulgarian",
+        "image": "data/images/salata.png",
+        "description": "Rejesh kakvoto namerish i zalivash s ocet i zehtin!"
+		},
+    {
+        "id": 4,
+        "name": "Zele",
+        "category": "Mandja",
+        "nationality":  "Bulgarian",
+        "image": "data/images/zele.jpg",
+        "description": "Rejesh i pechesh!"
+		},
+    {
+        "id": 5,
+        "name": "Oriz",
+        "category": "Mandja",
+        "nationality":  "Bulgarian",
+        "image": "data/images/oriz.jpg",
+        "description": "Chistish i gotvish!"
+		},
+    {
+        "id": 6,
+        "name": "Kartofi",
+        "category": "Mandja",
+        "nationality":  "Bulgarian",
+        "image": "data/images/kartofi.jpg",
+        "description": "Belish, purjish i slagash sirene!"
+		}
+]

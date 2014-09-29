@@ -1,0 +1,40 @@
+<div id="recipe-detail"
+     data-role="view"
+     data-title="Recipe Details"
+     data-show="app.recipes.viewModel.showDetail">
+    <div>
+        <h2 class="center" data-bind="text: name"></h2>
+        <table class="recipe-table">
+            <tr>
+                <th>Category </th>
+                <th>Nationality</th>
+            </tr>
+            <tr>
+                <td data-bind="text: category"></td>
+                <td data-bind="text: nationality"></td>
+            </tr>
+        </table>
+        <div class="center">
+            <br />
+            <img data-bind="attr: { src: image }" />
+            <br />
+            <div id="description-container" data-bind="attr: { data-description: id }">
+                <a data-role="button" data-click="app.recipes.viewModel.showDescription">Description</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="recipe-description"
+     data-role="modalview"
+     class="description-modal-view">
+    <div class="center">
+        <h2 data-bind="text: name"></h2>
+        <div data-role="scroller" class="description-scroller">
+            <div data-bind="text: name"></div>
+        </div>
+        <br />
+        <a data-click="app.recipes.viewModel.closeDescription" data-role="button">Back</a>
+        <br />
+        <a data-click="app.recipes.viewModel.createRecipe" data-role="button">Create Recipe</a>
+    </div>
+</div>
