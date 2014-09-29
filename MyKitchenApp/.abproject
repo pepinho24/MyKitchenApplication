@@ -41,8 +41,7 @@
     "org.apache.cordova.splashscreen",
     "org.apache.cordova.statusbar",
     "org.apache.cordova.vibration",
-    "nl.x-services.plugins.socialsharing@4.3.6",
-    "com.phonegap.plugins.sqlite@1.0.2"
+    "nl.x-services.plugins.socialsharing@4.3.6"
   ],
   "AndroidPermissions": [
     "android.permission.ACCESS_COARSE_LOCATION",
