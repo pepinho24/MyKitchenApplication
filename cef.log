@@ -62,3 +62,16 @@
 [0929/054001:ERROR:renderer_main.cc(226)] Running without renderer sandbox
 [0929/054110:ERROR:renderer_main.cc(226)] Running without renderer sandbox
 [0929/054205:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0929/200402:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0929/203310:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0929/204707:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0929/212655:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0929/212844:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0929/212919:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0929/212928:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0929/213038:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0929/213132:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0929/213238:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0929/213615:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0929/221657:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[0929/221708:ERROR:ipc_channel_win.cc(405)] pipe error: 232

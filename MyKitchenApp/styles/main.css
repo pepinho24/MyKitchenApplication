@@ -110,7 +110,7 @@ body, html {
 .recipe-prepareTime {
     float: right;
     font-weight: bolder;
-    color: #32cd32;
+    color: #000000;
     font-size: 0.8em;
 }
 .title-receipt-details {
@@ -126,12 +126,12 @@ body, html {
 }
 
 .recipe-prepareTime-border {
-    border: 1px solid #32cd32;
+    border: 1px solid #000000;
     border-radius: 50%;
     padding: 4px;
 }
 .navbar-main {
-    border-bottom: 1px solid #32cd32;
+    border-bottom: 1px solid #000000;
 }
 .navbar-data {
     color: #0076c5;
@@ -146,6 +146,14 @@ body, html {
     margin: 0;
     padding: 0;
 }
+
+.desc-rec-details {
+    font-weight: bold;    
+}
+.product-name {
+    font-size: 1.3em;
+}
+
 /* BUTTON STYLES*/
 .customButton a {
     color: #000000 !important;

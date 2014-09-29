@@ -7,46 +7,38 @@
         <!--action="./index.html"-->
         <ul data-role="listview" data-style="inset">
             <li>
-                <label>
-                    Name
-                    <input type="text" value="E.g. Musaka" id="recipe-name" />
-                </label>
+                <label for="recipe-name">Name</label>
+                <input id="recipe-name" type="text" value="" />
+
             </li>
             <li>
-                <label>
-                    Image
-
-                    <img src="" id="myImage" style="width: 100%" />
-                    <a id="choose-image" style="margin-right:0" onclick="getImage()">Click to choose  new image...</a>
-                    <script>
-                        function getImage() {
-                            navigator.camera.getPicture(function Success(imageData) {
-                                var image = document.getElementById('myImage');
-                                image.src = "data:image/jpeg;base64," + imageData;
-
-
-                            }, function (message) {
-                                alert('Failed because: ' + message);
-                            }, {
-                                quality: 50,
-                                sourceType: 0,
-                                destinationType: 0,
-                                encodingType: 0
-                            });
-                        }
-                    </script>
-                </label>
+                <label for="myImage">Image</label>
+                <a id="choose-image" data-role="button" style="margin-right:10px; float: right;" onclick="getImage()">Upload Image</a>
+                <script>
+                    function getImage() {
+                        navigator.camera.getPicture(function Success(imageData) {
+                            var image = document.getElementById('myImage');
+                            image.src = "data:image/jpeg;base64," + imageData;
+                        }, function (message) {
+                            alert('Failed because: ' + message);
+                        }, {
+                            quality: 50,
+                            sourceType: 0,
+                            destinationType: 0,
+                            encodingType: 0
+                        });
+                    }
+                </script>
             </li>
             <li>
-                <label>
-                    Category
-                    <select>
-                        <option value="Mandja">Mandja</option>
-                        <option value="Qstie">Qstie</option>
-                        <option value="Salata">Salata</option>
-                        <option value="Supa">Supa</option>
-                    </select>
-                </label>
+                <label>Category</label>
+                <select>
+                    <option value="Mandja">Mandja</option>
+                    <option value="Qstie">Qstie</option>
+                    <option value="Salata">Salata</option>
+                    <option value="Supa">Supa</option>
+                </select>
+
             </li>
             <li>
                 <label>
@@ -143,12 +135,11 @@
                 </label>
             </li>-->
             <li>
-                <label>
-                    Description
-                    <textarea style="resize: none">
-                        Obqsnenie kak se prigotvq
-                    </textarea>
-                </label>
+                <label>Description</label>
+                <textarea style="resize: none">
+                    Obqsnenie kak se prigotvq
+                </textarea>
+
             </li>
         </ul>
         <input type="submit" name="save-recipe" value="Save Recipe" id="save-recipe">
@@ -165,11 +156,11 @@
                     'Success',            // title
                     'Ok'                  // buttonName
                 );
-               
-                console.log($(this))
-                console.log(this)
-                console.log($(this).serializeArray());
-               
+
+                //                console.log($(this));
+                //                console.log(this);
+                //                console.log($(this).serializeArray());
+
             });
         </script>
     </form>

@@ -55,6 +55,7 @@
     <Content Include="data\images\qica.jpg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\categories.js" />
     <Content Include="scripts\products.js" />
     <Content Include="styles\images\recipes-logo.jpg">
       <SubType>Content</SubType>
@@ -149,6 +150,7 @@
     <Content Include="views\location.html">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="views\product-details.html" />
     <Content Include="views\products.html" />
     <Content Include="views\recipe-detail.html" />
     <Content Include="views\recipes.html" />

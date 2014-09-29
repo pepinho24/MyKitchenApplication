@@ -16,6 +16,7 @@
                     read: {
                         dataType: "json",
                         url: "http://coocking.apphb.com/api/Products/All"
+//                        url: "http://localhost:3321/api/Products/All"
                     }
                 }
             });
@@ -48,8 +49,8 @@
                    
                 };
 
-                kendo.bind($('#recipe-description'), model, kendo.mobile.ui);
-                $("#recipe-description").kendoMobileModalView("open");
+                kendo.bind($('#product-description'), model, kendo.mobile.ui);
+                $("#product-description").kendoMobileModalView("open");
             });
         },
 
