@@ -11,14 +11,20 @@
     <script>
         function goTop() {
             $('#tabstrip-recipes').silentScroll();
-            
         }
     </script>
 </div>
+
 <!--Recipe template-->
 <script type="text/x-kendo-tmpl" id="recipe-template">
     <div>
-        <span class="recipe-name">${Name}</span>
-        <a class="position-right button" href="views/recipe-detail.html?uid=${Id}" data-role="button">Details</a>
+        <span class="recipe-prepareTime"><span class="recipe-prepareTime-border">${PrepareTime}</span> min</span>
+        <span class="recipe-name">${Name}</span><br />
+        # if(Description != null){
+           # <span class="recipe-description">${Description}</span> #
+        } #
+        <br/>
+        <span class="recipe-category">${Category}</span>
+        <span class="customButton"><a class="position-right button" href="views/recipe-detail.html?uid=${Id}" data-role="button">Details</a></span>
     </div>
 </script>

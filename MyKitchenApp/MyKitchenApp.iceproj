@@ -55,6 +55,7 @@
     <Content Include="data\images\qica.jpg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\products.js" />
     <Content Include="styles\images\recipes-logo.jpg">
       <SubType>Content</SubType>
     </Content>
@@ -148,8 +149,10 @@
     <Content Include="views\location.html">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="views\products.html" />
     <Content Include="views\recipe-detail.html" />
     <Content Include="views\recipes.html" />
+    <Content Include="views\share.html" />
     <Content Include="views\weather.html">
       <SubType>Content</SubType>
     </Content>

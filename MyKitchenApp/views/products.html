@@ -1,0 +1,19 @@
+<!--Products-->
+<div id="products-main"
+     data-role="view"
+     data-title="Products"
+     data-model="app.products.viewModel">
+
+    <ul data-role="listview"
+        data-bind="source: recipesDataSource"
+        data-template="products-template"></ul>
+
+</div>
+
+<!--Products template-->
+<script type="text/x-kendo-tmpl" id="products-template">
+    <div>
+        <span class="recipe-name">${Name}</span><br />
+    </div>
+</script>
+
