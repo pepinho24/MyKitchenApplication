@@ -15,7 +15,7 @@
                 transport: {
                     read: {
                         dataType: "json",
-                        url: "http://coocking.apphb.com/api/Receipts/All"
+                        url: "http://coocking.apphb.com/api/Products/All"
                     }
                 }
             });
