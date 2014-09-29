@@ -40,7 +40,7 @@
             <li>
                 <label>
                     Category
-                    <select>
+                    <select id="recipe-category">
                         <option value="Mandja">Mandja</option>
                         <option value="Qstie">Qstie</option>
                         <option value="Salata">Salata</option>
@@ -51,7 +51,7 @@
             <li>
                 <label>
                     Nationality
-                    <select>
+                    <select id="recipe-nationality">
                         <option value="Bulgarian">Bulgarian</option>
                         <option value="Non-Bulgarian">Non-Bulgarian</option>
                     </select>
@@ -160,13 +160,20 @@
                     'Recipe created Successfully!',  // message
                     function myfunction() {
                         console.log("ot successa na alerta")
-                        global.app.recipes.viewModel.showDetails()
+                       // global.app.recipes.viewModel.showDetails()
                     },         // callback
                     'Success',            // title
                     'Ok'                  // buttonName
                 );
-               
-                console.log($(this))
+                var that = $(this);
+                var recipeName = that.find('input[id="recipe-name"]').val(); 
+                var recipeCategory = that.find('select[id="recipe-category"]').val();
+                var recipeNationality = that.find('select[id="recipe-nationality"]').val();
+
+                console.log('Recipe name is : ' + recipeName)
+                console.log('Recipe category is : ' + recipeCategory)
+                console.log('Recipe nationality is : ' + recipeNationality)
+                console.log(that)
                 console.log(this)
                 console.log($(this).serializeArray());
                
