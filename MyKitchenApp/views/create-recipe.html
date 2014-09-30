@@ -145,8 +145,23 @@
 
             </li>
         </ul>
-        <input type="submit" name="save-recipe" value="Save Recipe" id="save-recipe">
+        <a class="position-right button" href="index.html" onclick="submitRecipe()" data-role="button">Save recipe</a>
+       <!-- <input type="submit"  name="save-recipe" value="Save Recipe" id="save-recipe">-->
         <script>
+            function submitRecipe()  {
+                navigator.notification.beep(2);
+                navigator.notification.vibrate(100)
+                navigator.notification.alert(
+                    'Thank you for your recipe!',  // message
+                    function myfunction() {
+                        console.log("ot successa na alerta")
+                        global.app.recipes.viewModel.showDetails()
+                    },         // callback
+                    'Success',            // title
+                    'Ok'                  // buttonName
+                )
+            }
+
             $("#new-recipe").submit(function (event) {
                 navigator.notification.beep(2);
                 navigator.notification.vibrate(100)
