@@ -5,7 +5,7 @@
   "AppIdentifier": "com.telerik.MyKitchenApp",
   "DisplayName": "MyKitchenApp",
   "Author": "",
-  "Description": "",
+  "Description": "MyKitchenApp",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
@@ -40,7 +40,8 @@
     "org.apache.cordova.network-information",
     "org.apache.cordova.splashscreen",
     "org.apache.cordova.statusbar",
-    "org.apache.cordova.vibration"
+    "org.apache.cordova.vibration",
+    "nl.x-services.plugins.socialsharing@4.3.6"
   ],
   "AndroidPermissions": [
     "android.permission.ACCESS_COARSE_LOCATION",

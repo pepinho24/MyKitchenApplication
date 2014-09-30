@@ -3,34 +3,62 @@
      data-title="Recipe Details"
      data-show="app.recipes.viewModel.showDetail">
     <div>
-        <h2 class="center" data-bind="text: name"></h2>
+        <h2 class="center title-receipt-details" data-bind="text: Name"></h2>
+        <span class="desc-receipt-header">Preparation</span>
+        <p class="desc-receipt-text" data-bind="text: Preparation"></p>
+        <span class="desc-receipt-header">Description</span>
+        <p class="desc-receipt-text" data-bind="text: Description"></p>
+
+        <!--Images-->
+        <ul data-role="listview"
+            data-bind="source: Images"
+            data-template="img-recipe-template"></ul>
+
         <table class="recipe-table">
+            <!--<tr>
+                <th bgcolor="red">item</th>
+                <th bgcolor="green">Value</th>
+            </tr>-->
             <tr>
-                <th>Category </th>
-                <th>Nationality</th>
+                <td>Nationality: </td>
+                <td class="desc-rec-details" data-bind="text: Nationality"></td>
             </tr>
             <tr>
-                <td data-bind="text: category"></td>
-                <td data-bind="text: nationality"></td>
+                <td>Category: </td>
+                <td class="desc-rec-details" data-bind="text: Category"></td>
+            </tr>
+            <tr>
+                <td>CreatedDate</td>
+                <td class="desc-rec-details" data-bind="text: CreatedDate"></td>
+            </tr>
+            <tr>
+                <td>CookTime</td>
+                <td class="desc-rec-details" data-bind="text: CookTime"></td>
+            </tr>
+            <tr>
+                <td>PrepareTime</td>
+                <td class="desc-rec-details" data-bind="text: PrepareTime"></td>
+            </tr>
+            <tr>
+                <td>Difficulty</td>
+                <td class="desc-rec-details" data-bind="text: Difficulty"></td>
+            </tr>
+            <tr>
+                <td>Holiday</td>
+                <td class="desc-rec-details" class="desc-rec-details" data-bind="text: Holiday"></td>
             </tr>
         </table>
-        <div class="center">
-            <br />
-            <img data-bind="attr: { src: image }" />
-            <br />
-            <div id="description-container" data-bind="attr: { data-description: id }">
-                <a data-role="button" data-click="app.recipes.viewModel.showDescription">Description</a>
-            </div>
-        </div>
+
     </div>
 </div>
+
 <div id="recipe-description"
      data-role="modalview"
      class="description-modal-view">
     <div class="center">
-        <h2 data-bind="text: name"></h2>
+        <h2 data-bind="text: Name"></h2>
         <div data-role="scroller" class="description-scroller">
-            <div data-bind="text: name"></div>
+            <div data-bind="text: Name"></div>
         </div>
         <br />
         <a data-click="app.recipes.viewModel.closeDescription" data-role="button">Back</a>
@@ -38,3 +66,11 @@
         <a data-click="app.recipes.viewModel.createRecipe" data-role="button">Create Recipe</a>
     </div>
 </div>
+
+<!--Image template-->
+<script type="text/x-kendo-tmpl" id="img-recipe-template">
+    <div>
+        <img class="img-details-receipt" src="#: Location #" alt=" #: Name #" />
+        <p class="no-pading-margin">Image: #: Name #</p>
+    </div>
+</script>

@@ -2,9 +2,9 @@
 
     var app = global.app = global.app || {};
 
-    var RecipesListViewModel = kendo.data.ObservableObject.extend({
+    var ProductsListViewModel = kendo.data.ObservableObject.extend({
 
-        recipesDataSource: null,
+        productsDataSource: null,
 
         init: function () {
             var that = this;
@@ -15,20 +15,19 @@
                 transport: {
                     read: {
                         dataType: "json",
-                          url: "http://coocking.apphb.com/api/Receipts/All"
-//                        url: "http://localhost:3321/api/Receipts/All"
-
+                        url: "http://coocking.apphb.com/api/Products/All"
+//                        url: "http://localhost:3321/api/Products/All"
                     }
                 }
             });
 
-            that.set("recipesDataSource", dataSource);
+            that.set("productsDataSource", dataSource);
         },
 
         showDetail: function (e) {
-            var that = new RecipesListViewModel();
+            var that = new ProductsListViewModel();
 
-            var data = that.get("recipesDataSource");
+            var data = that.get("productsDataSource");
 
             data.fetch(function () {
                 var id = e.view.params.uid;
@@ -38,32 +37,34 @@
         },
 
         showDescription: function () {
-            var that = new RecipesListViewModel();
+            var that = new ProductsListViewModel();
 
-            var data = that.get("recipesDataSource");
+            var data = that.get("productsDataSource");
 
             data.fetch(function () {
                 var id = parseInt($('#description-container').attr('data-description'));
-                var recipe = data.at(parseInt(id) - 1);
+                var product = data.at(parseInt(id) - 1);
                 var model = {
-                    name: recipe.name,
-                    description: recipe.description
+                    //name: product.name
+                   
                 };
 
-                kendo.bind($('#recipe-description'), model, kendo.mobile.ui);
-                $("#recipe-description").kendoMobileModalView("open");
+                kendo.bind($('#product-description'), model, kendo.mobile.ui);
+                $("#product-description").kendoMobileModalView("open");
             });
         },
+
         closeDescription: function () {
             $("#recipe-description").kendoMobileModalView("close");
         },
-        createRecipe: function () {
+
+        createProduct: function () {
 
         }
     });
 
-    app.recipes = {
-        viewModel: new RecipesListViewModel(),
+    app.products = {
+        viewModel: new ProductsListViewModel()
     };
 
 })(window);

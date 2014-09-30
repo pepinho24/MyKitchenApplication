@@ -1,0 +1,20 @@
+<!--Products-->
+<div id="products-main"
+     data-role="view"
+     data-title="Products"
+     data-model="app.products.viewModel">
+
+    <ul data-role="listview"
+        data-bind="source: productsDataSource"
+        data-template="products-template"></ul>
+
+</div>
+
+<!--Products template-->
+<script type="text/x-kendo-tmpl" id="products-template">
+   
+        <div class="product-name">${Name}</div><hr/>
+<!--        <a class="position-right button" href="views/product-detail.html?uid=${Id}" data-role="button">More</a>-->
+   
+</script>
+
